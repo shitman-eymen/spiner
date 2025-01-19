@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin the Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="spinner-container" class="spinner-container">
+        <!-- Spinner -->
+        <div id="wheel" class="wheel">
+            <!-- Segments will be added dynamically -->
+        </div>
+
+        <!-- Button to spin -->
+        <button id="spin-button" onclick="spinWheel()">Click to Spin</button>
+
+        <!-- Input to add name -->
+        <input type="text" id="name-input" placeholder="Enter name" />
+        <button id="add-name-button" onclick="addName()">Add Name to Spinner</button>
+    </div>
+
+    <!-- Custom Login Modal -->
+    <div id="login-modal" class="login-modal">
+        <div class="modal-content">
+            <h3>Please log in to spin the wheel</h3>
+            <!-- Link to your custom login page -->
+            <a href="https://shitman.pagekite.me/" class="login-button">Login</a>  <!-- Replace URL_LOGIN_PAGE with the actual login URL -->
+            <button onclick="closeLoginModal()" class="cancel-button">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
